@@ -100,7 +100,7 @@ docker exec -it pg-campus   psql -U admin -d cafeteria -c "SELECT * FROM cliente
 docker exec -it pg-babahoyo psql -U admin -d cafeteria -c "SELECT * FROM clientes_contacto;"
 ```
 
-## 5. Fragmentación mixta (por ciudad + sensibilidad)
+## 5. Fragmentación mixta
 
 ```bash
 docker exec -i pg-campus   psql -U admin -d cafeteria < sql/05_campus.sql
@@ -117,7 +117,7 @@ docker exec -it pg-babahoyo psql -U admin -d cafeteria -c "SELECT * FROM cliente
 docker exec -it pg-babahoyo psql -U admin -d cafeteria -c "SELECT * FROM clientes_contacto_otras;"
 ```
 
-## 6. Vistas globales (`postgres_fdw`)
+## 6. Vistas globales
 
 Se ejecuta **solo en pg-campus**, que actúa como nodo coordinador:
 
