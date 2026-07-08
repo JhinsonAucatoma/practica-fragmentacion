@@ -146,14 +146,3 @@ Resultados esperados:
 | Reconstrucción | Totales por sede idénticos en ambas consultas (Campus: 4.25, Babahoyo: 4.25, Ventanas: 2.25) |
 | Disjunción | La consulta de duplicados devuelve 0 filas |
 
-## Apagar el entorno
-
-```bash
-docker compose down
-```
-
-Para eliminar también los volúmenes de datos:
-
-```bash
-docker compose down -v
-```
